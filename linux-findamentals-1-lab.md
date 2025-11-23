@@ -17,9 +17,10 @@ This lab covered the basics of navigating the Linux file system, using essential
 
 | Step | Screenshot |
 |------|------------|
-| Navigating directories | ![Navigation](./step01-file-system.png) |
-| File permissions | ![Permissions](./step02-permissions.png) |
-| Editing with nano | ![Nano](./step03-nano-editor.png) |
+![Navigation](./Linux-Fundamentals-1-Lab/step01-file-system.png)
+![Permissions](./Linux-Fundamentals-1-Lab/step02-permissions.png)
+![Nano](./Linux-Fundamentals-1-Lab/step03-nano-editor.png)
+
 
 ---
 
