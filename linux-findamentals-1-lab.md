@@ -17,9 +17,10 @@ This lab covered the basics of navigating the Linux file system, using essential
 
 | Step | Screenshot |
 |------|------------|
-![Navigation](./Linux-Fundamentals-1-Lab/step01-basic-commands-file-system.png)
-![Permissions](./Linux-Fundamentals-1-Lab/step02-finding-files.png)
-![Shell Operations](./Linux-Fundamentals-1-Lab/step03-shell-operations.png)
+| Basic Commands & File System | ![Navigation](./Linux-Fundamentals-1-Lab/step01-basic-commands-file-system.png) |
+| Finding Files | ![Permissions](./Linux-Fundamentals-1-Lab/step02-finding-files.png) |
+| Shell Operations | ![Shell Operations](./Linux-Fundamentals-1-Lab/step03-shell-operations.png) |
+
 
 
 ---
