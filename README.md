@@ -29,5 +29,8 @@ My Linux Fundamentals learning journey,notes,commands, and labs
 ![chmod lab 1](day-1-permissions/10_chmod_numeric_code_lab_1.png)
 ![chmod lab 2](day-1-permissions/10_chmod_numeric_code_lab_2.png)
 
+## Day 2 — Linux Fundamentals Part 2
+Completed lab covering permissions, ownership, chmod, chown, and permission verification.  
+[View the work →](./Day-2-Linux-Fundamentals-Part-2/README.md)
 
 
