@@ -90,4 +90,12 @@ This lab focused on:
 - 
 
 
+## Day 4 — Linux Fundamentals Part 4
+Completed lab covering:
+- File creation and editing
+- Searching text in files
+- Locating files in directories
+- Basic text manipulation with awk
+
+[View Day 4 Lab →](./Day-4-Linux-Fundamentals-Part-4/README.md)
 
