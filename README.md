@@ -22,6 +22,6 @@ My Linux Fundamentals learning journey,notes,commands, and labs
 4. Verified permissions with `ls -l`  
 
 **Screenshots:**
-![Screenshot 1](LinuxFundamentals2/Lesson1/10_chmod_numeric_code_lab_1.png)
-![Screenshot 2](LinuxFundamentals2/Lesson1/11_chmod_numeric_code_lab_2.png)
+![Screenshot 1](day-1-permissions/LinuxFundamentals2/Lesson1/10_chmod_numeric_code_lab_1.png)
+![Screenshot 2](day-1-permissions/LinuxFundamentals2/Lesson1/11_chmod_numeric_code_lab_2.png)
 
