@@ -22,5 +22,5 @@
 ## Linux Fundamentals 2 – Lab 1: Permissions
 
 ### Screenshots
-![chmod lab 1](Linux-Fundamentals-2-Lab-1/10_chmod_numeric_code_lab_1.png)
-![chmod lab 2](Linux-Fundamentals-2-Lab-1/11_chmod_numeric_code_lab_2.png)
+![chmod lab 1](10_chmod_numeric_code_lab_1.png)
+![chmod lab 2](11_chmod_numeric_code_lab_2.png)
