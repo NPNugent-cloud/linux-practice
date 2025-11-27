@@ -87,6 +87,7 @@ This lab focused on:
 - Learned to safely kill background jobs  
 - Learned to view, stop, start, and enable services  
 - Gained confidence in systemctl commands and Linux process management
+- 
 
 
 
