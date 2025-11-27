@@ -26,7 +26,7 @@ My Linux Fundamentals learning journey,notes,commands, and labs
 
 ### chmod Numeric Code Lab
 
-![chmod lab 1](day-1-permissions/10_chmod_numeric_code_lab_1.png)
-![chmod lab 2](day-1-permissions/11_chmod_numeric_code_lab_2.png)
+![chmod lab 1](day-1-permissions/LinuxFundamentals2/Lesson1/10_chmod_numeric_code_lab_1.png)
+![chmod lab 2](day-1-permissions/LinuxFundamentals2/Lesson1/11_chmod_numeric_code_lab_2.png)
 
 
