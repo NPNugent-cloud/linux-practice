@@ -23,11 +23,11 @@ This lab focused on:
 - Used `tar -cvf project.tar project` to archive files.
 
 ### 3. Verify tar archive contents
-![screenshot3](./s3_verify_archived_contents.png)
+![screenshot3](./s3_verify_archive_contents.png)
 - Used `tar -tvf project.tar` to list contents.
 
 ### 4. Extract archive
-![screenshot4](./s4_extract_archive_folder.png)
+![screenshot4](./s4_extract_archived_folder.png)
 - Created `extracted_project` and extracted archive with `tar -xvf project.tar -C extracted_project/`.
 
 ### 5. Compress with gzip
