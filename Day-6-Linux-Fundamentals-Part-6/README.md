@@ -23,7 +23,7 @@ This lab focused on:
 - Used `tar -cvf project.tar project` to archive files.
 
 ### 3. Verify tar archive contents
-![screenshot3](./s3_verify_archive_contents.png)
+![screenshot3](./s3_verify_archived_contents.png)
 - Used `tar -tvf project.tar` to list contents.
 
 ### 4. Extract archive
