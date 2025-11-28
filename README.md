@@ -108,3 +108,15 @@ Completed lab covering:
 - Modifying file permissions (symbolic and numeric)
 
 [View Day 5 Lab →](./Day-5-Linux-Fundamentals-Part-5/README.md)
+
+
+
+## Day 6 — Linux Fundamentals Part 6
+Completed lab covering:
+- Creating directories and organizing files
+- Archiving files with tar
+- Extracting archives
+- Compressing archives using gzip and bzip2
+
+[View Day 6 Lab →](./Day-6-Linux-Fundamentals-Part-6/README.md)
+
