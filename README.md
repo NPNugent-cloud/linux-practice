@@ -99,3 +99,12 @@ Completed lab covering:
 
 [View Day 4 Lab →](./Day-4-Linux-Fundamentals-Part-4/README.md)
 
+
+
+## Day 5 — Linux Fundamentals Part 5
+Completed lab covering:
+- Viewing and understanding file permissions
+- Changing file ownership
+- Modifying file permissions (symbolic and numeric)
+
+[View Day 5 Lab →](./Day-5-Linux-Fundamentals-Part-5/README.md)
