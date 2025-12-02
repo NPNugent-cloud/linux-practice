@@ -1,4 +1,4 @@
-# Linux Fundamentals Part 3 — Day 3 Lab
+# Linux Fundamentals-2-Lab-3
 
 ## Overview
 This lab focused on:
