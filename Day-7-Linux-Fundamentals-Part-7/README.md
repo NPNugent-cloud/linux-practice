@@ -17,24 +17,27 @@ This lab focused on:
 ### 1. View running processes
 
 ![s1\_processes](./s2_ps_aux_output.png)
+![s1\_processes](./s3_top_running.png)
+![s1\_processes](./s2_htop_running.png)
 
 * Ran `ps aux` to list all processes and `top` for real-time monitoring. If `htop` is installed, used `htop` for easier navigation. Quitted interactive tools with `q` or `F10`.
 
 ### 2. Search for specific processes
 
-![s2\_search](./Section1_Step2_search.png)
+![s2\_search](./s5_ps-ef_grep[b]ash.png)
+![s2\_search](./s6_pidof_systemd.png)
 
 * Used `ps -ef | grep [b]ash` to list bash processes, `pgrep bash` for PIDs, and `pgrep bash | xargs -r ps -o pid,ppid,cmd -p` to safely show details. Verified `systemd` PID with `pidof systemd`.
 
 ### 3. Terminate processes
 
-![s3\_kill](./Section1_Step3_kill.png)
+![s3\_kill](./s7_kill_processes.png)
 
 * Started background `sleep` processes and used `pgrep sleep` to find them. Killed a single process with `kill $(pgrep sleep | head -n 1)` and removed all `sleep` processes with `killall sleep`.
 
 ### 4. Adjust process priorities
 
-![s4\_priority](./Section1_Step4_priority.png)
+![s4\_priority](./s8_prioritising_deprioritising.png)
 
 * Launched `yes > /dev/null &` to generate CPU load. Checked nice values with `ps -o pid,ni,cmd -p $(pgrep yes | head -n 1)` and adjusted priority using `sudo renice +10` and `sudo renice -5` on the single PID.
 
