@@ -122,36 +122,7 @@ sudo renice -5 $(pgrep yes | head -n 1)
 
 ![screenshot1a](./s8_prioritising_deprioritising.png)
 
----
 
-## Step 5 — Section Complete
 
-* All commands are **Kali-safe**, even with multiple or zero PIDs.
-* Keep screenshots in the same folder for proper display in GitHub.
 
----
-
-## **Screenshot Links for Browser (Markdown)**
-
-```markdown
-![View Processes](Section1_Step1_processes.png)
-![Process Search](Section1_Step2_search.png)
-![Terminate Processes](Section1_Step3_kill.png)
-![Priority Management](Section1_Step4_priority.png)
-```
-
----
-
-## GitHub Commit Reminder
-
-From the repo root:
-
-```bash
-git add Day-7-Linux-Fundamentals-Part-7
-git commit -m "Add Day-7 Section 1 lab with Step 1-4 and screenshots"
-git push origin main
-```
-
-* Open GitHub in a browser to confirm screenshots render correctly.
-* Each Day folder is standardized and self-contained.
 
