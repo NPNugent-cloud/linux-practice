@@ -68,7 +68,7 @@ pidof systemd
 * `xargs -r ps -o pid,ppid,cmd -p` safely handles multiple or zero PIDs.
 * `pidof systemd` finds the main systemd PID.
 
-![screenshot1a](./s5_ps-ef_|_grep[b]ash.png)
+![screenshot1a](./s5_ps-ef_|_grep[bash].png
 ![screenshot1a](./s6_pidof_systemd.png)
 
 ---
