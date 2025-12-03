@@ -35,7 +35,6 @@ htop
 * Easier to navigate and see CPU/memory usage visually.
 * Use arrow keys to scroll and **F10** to quit.
 
-**Screenshot Checkpoint:**
 ![screenshot1a](./s2_pa_aux_output.png)
 ![screenshot1b](./s3_top_running.png)
 ![screenshot1c](./s4_htop_running.png)
@@ -69,8 +68,8 @@ pidof systemd
 * `xargs -r ps -o pid,ppid,cmd -p` safely handles multiple or zero PIDs.
 * `pidof systemd` finds the main systemd PID.
 
-**Screenshot Checkpoint:**
-`Section1_Step2_search.png`
+![screenshot1a](./s5_ps-ef_|_grep [b]ash.png)
+![screenshot1a](./s6_pidof_systemd.png)
 
 ---
 
@@ -97,8 +96,7 @@ sleep 800 &
 killall sleep
 ```
 
-**Screenshot Checkpoint:**
-`Section1_Step3_kill.png`
+![screenshot1a](./s7_kill_processes.png)
 
 ---
 
@@ -122,8 +120,7 @@ sudo renice +10 $(pgrep yes | head -n 1)
 sudo renice -5 $(pgrep yes | head -n 1)
 ```
 
-**Screenshot Checkpoint:**
-`Section1_Step4_priority.png`
+![screenshot1a](./s8_prioritising_deprioritising.png)
 
 ---
 
