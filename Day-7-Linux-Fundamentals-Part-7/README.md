@@ -1,8 +1,44 @@
-# Day-7 Linux Fundamentals Part 7 — Section 1: Advanced Process Management
+# Day-7 Linux Fundamentals Part 7 — Advanced Process Management
 
 **Lab Folder:** `Day-7-Linux-Fundamentals-Part-7`
 **Purpose:** Learn advanced process management in Kali Linux, including viewing, searching, terminating, and prioritizing processes.
 All commands are Kali-safe — no syntax errors even if multiple or zero PIDs exist.
+
+---
+
+## Step 1 — View Running Processes
+
+**Objective:** Learn to list processes and view them interactively.
+
+**Basic process listing:**
+
+```bash
+ps aux
+```
+
+* Shows every process for all users with PID, CPU/memory usage, and command.
+
+**Interactive real-time monitoring:**
+
+```bash
+top
+```
+
+* Press **q** to quit.
+
+**Optional: If `htop` is installed:**
+
+```bash
+htop
+```
+
+* Easier to navigate and see CPU/memory usage visually.
+* Use arrow keys to scroll and **F10** to quit.
+
+**Screenshot Checkpoint:**
+`linux-practice/Day-7-Linux-Fundamentals-Part-7/s2_ps_aux_output.png`
+`linux-practice/Day-7-Linux-Fundamentals-Part-7/s3_top_runnung.png`
+`linux-practice/Day-7-Linux-Fundamentals-Part-7/s4_htop_running.png`
 
 ---
 
@@ -61,13 +97,6 @@ sleep 800 &
 killall sleep
 ```
 
-**Explanation:**
-
-* `sleep 500 &` runs a background process for testing.
-* `pgrep sleep` finds its PID.
-* `kill $(pgrep sleep | head -n 1)` kills only one process.
-* `killall sleep` kills all sleep processes safely.
-
 **Screenshot Checkpoint:**
 `Section1_Step3_kill.png`
 
@@ -93,13 +122,6 @@ sudo renice +10 $(pgrep yes | head -n 1)
 sudo renice -5 $(pgrep yes | head -n 1)
 ```
 
-**Explanation:**
-
-* `yes > /dev/null &` generates CPU load for testing.
-* `ps -o pid,ni,cmd` shows PID, nice value (priority), and command.
-* `renice +10` lowers priority, `renice -5` raises it.
-* `head -n 1` ensures only one PID is modified.
-
 **Screenshot Checkpoint:**
 `Section1_Step4_priority.png`
 
@@ -107,13 +129,15 @@ sudo renice -5 $(pgrep yes | head -n 1)
 
 ## Step 5 — Section Complete
 
-* All steps are **Kali-safe** and can be executed without syntax errors.
-* Screenshots should be stored in the same folder.
-* Commands and screenshots are **self-contained** for easy GitHub viewing.
+* All commands are **Kali-safe**, even with multiple or zero PIDs.
+* Keep screenshots in the same folder for proper display in GitHub.
 
-**Screenshot Links (Relative Paths for Browser):**
+---
+
+## **Screenshot Links for Browser (Markdown)**
 
 ```markdown
+![View Processes](Section1_Step1_processes.png)
 ![Process Search](Section1_Step2_search.png)
 ![Terminate Processes](Section1_Step3_kill.png)
 ![Priority Management](Section1_Step4_priority.png)
@@ -123,19 +147,14 @@ sudo renice -5 $(pgrep yes | head -n 1)
 
 ## GitHub Commit Reminder
 
-From your repo root:
+From the repo root:
 
 ```bash
 git add Day-7-Linux-Fundamentals-Part-7
-git commit -m "Add Day-7 Section 1 lab with screenshots"
+git commit -m "Add Day-7 Section 1 lab with Step 1-4 and screenshots"
 git push origin main
 ```
 
-* After pushing, open GitHub in your browser to confirm the README.md renders correctly and screenshots display inline.
+* Open GitHub in a browser to confirm screenshots render correctly.
+* Each Day folder is standardized and self-contained.
 
----
-
-**Notes:**
-
-* Each Day’s folder is standardized (`Day-7-Linux-Fundamentals-Part-7`) to maintain consistency across the repo.
-* Following this structure keeps your repository recruiter-friendly and organized.
