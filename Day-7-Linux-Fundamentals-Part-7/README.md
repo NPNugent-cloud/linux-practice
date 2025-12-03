@@ -36,9 +36,9 @@ htop
 * Use arrow keys to scroll and **F10** to quit.
 
 **Screenshot Checkpoint:**
-`linux-practice/Day-7-Linux-Fundamentals-Part-7/s2_ps_aux_output.png`
-`linux-practice/Day-7-Linux-Fundamentals-Part-7/s3_top_runnung.png`
-`linux-practice/Day-7-Linux-Fundamentals-Part-7/s4_htop_running.png`
+![screenshot1a](./s2_pa_aux_output.png)
+![screenshot1b](./s3_top_running.png)
+![screenshot1c](./s4_htop_running.png)
 
 ---
 
