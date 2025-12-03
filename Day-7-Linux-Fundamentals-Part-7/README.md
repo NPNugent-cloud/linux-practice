@@ -1,128 +1,53 @@
-# Day-7 Linux Fundamentals Part 7 — Advanced Process Management
+# Linux Fundamentals Part 7 — Day 7 Lab
 
-**Lab Folder:** `Day-7-Linux-Fundamentals-Part-7`
-**Purpose:** Learn advanced process management in Kali Linux, including viewing, searching, terminating, and prioritizing processes.
-All commands are Kali-safe — no syntax errors even if multiple or zero PIDs exist.
+## Overview
 
----
+This lab focused on:
 
-## Step 1 — View Running Processes
-
-**Objective:** Learn to list processes and view them interactively.
-
-**Basic process listing:**
-
-```bash
-ps aux
-```
-
-* Shows every process for all users with PID, CPU/memory usage, and command.
-
-**Interactive real-time monitoring:**
-
-```bash
-top
-```
-
-* Press **q** to quit.
-
-**Optional: If `htop` is installed:**
-
-```bash
-htop
-```
-
-* Easier to navigate and see CPU/memory usage visually.
-* Use arrow keys to scroll and **F10** to quit.
-
-![screenshot1a](./s2_pa_aux_output.png)
-![screenshot1b](./s3_top_running.png)
-![screenshot1c](./s4_htop_running.png)
+* Viewing running processes (ps, top, htop)
+* Searching for processes safely (pgrep, ps, pidof)
+* Terminating processes (kill, killall) without syntax errors
+* Adjusting process priorities (nice, renice)
+* Taking screenshot checkpoints for verification
 
 ---
 
-## Step 2 — Search for Specific Processes
+## Screenshots & Notes
 
-**Objective:** List and inspect processes safely.
+### 1. View running processes
 
-**Commands:**
+![s1\_processes](./s2_ps_aux_output.png)
 
-```bash
-# List all bash processes
-ps -ef | grep [b]ash
+* Ran `ps aux` to list all processes and `top` for real-time monitoring. If `htop` is installed, used `htop` for easier navigation. Quitted interactive tools with `q` or `F10`.
 
-# Optional: Get only PIDs
-pgrep bash
+### 2. Search for specific processes
 
-# Safely list details for all bash PIDs
-pgrep bash | xargs -r ps -o pid,ppid,cmd -p
+![s2\_search](./Section1_Step2_search.png)
 
-# Find PID of systemd
-pidof systemd
-```
+* Used `ps -ef | grep [b]ash` to list bash processes, `pgrep bash` for PIDs, and `pgrep bash | xargs -r ps -o pid,ppid,cmd -p` to safely show details. Verified `systemd` PID with `pidof systemd`.
 
-**Explanation:**
+### 3. Terminate processes
 
-* `ps -ef | grep [b]ash` lists running bash processes; `[b]ash` prevents grep from appearing.
-* `pgrep bash` outputs all bash PIDs.
-* `xargs -r ps -o pid,ppid,cmd -p` safely handles multiple or zero PIDs.
-* `pidof systemd` finds the main systemd PID.
+![s3\_kill](./Section1_Step3_kill.png)
 
-![screenshot1a](./s5_ps-ef_grep[b]ash.png)
-![screenshot1a](./s6_pidof_systemd.png)
+* Started background `sleep` processes and used `pgrep sleep` to find them. Killed a single process with `kill $(pgrep sleep | head -n 1)` and removed all `sleep` processes with `killall sleep`.
+
+### 4. Adjust process priorities
+
+![s4\_priority](./Section1_Step4_priority.png)
+
+* Launched `yes > /dev/null &` to generate CPU load. Checked nice values with `ps -o pid,ni,cmd -p $(pgrep yes | head -n 1)` and adjusted priority using `sudo renice +10` and `sudo renice -5` on the single PID.
 
 ---
 
-## Step 3 — Terminate Processes
+## Key Takeaways
 
-**Objective:** Safely terminate individual or all processes.
-
-**Commands:**
-
-```bash
-# Start a dummy background process
-sleep 500 &
-
-# Verify PID
-pgrep sleep
-
-# Kill a single process safely
-kill $(pgrep sleep | head -n 1)
-
-# Start another dummy process
-sleep 800 &
-
-# Kill all sleep processes
-killall sleep
-```
-
-![screenshot1a](./s7_kill_processes.png)
+* Process inspection and interactive monitoring are critical for system troubleshooting.
+* Always use Kali-safe commands to avoid PID syntax errors (use `xargs -r`, `head -n 1`, or `ps -ef | grep [b]ash`).
+* Use `kill` for specific PIDs and `killall` for targeted process names.
+* `renice` requires sudo to raise priority; lowering priority (higher nice value) is safe for background load testing.
 
 ---
-
-## Step 4 — Adjust Process Priorities
-
-**Objective:** Change process priorities using nice values.
-
-**Commands:**
-
-```bash
-# Start a CPU-intensive process
-yes > /dev/null &
-
-# Check current priority
-ps -o pid,ni,cmd -p $(pgrep yes | head -n 1)
-
-# Lower priority (increase nice value)
-sudo renice +10 $(pgrep yes | head -n 1)
-
-# Raise priority (decrease nice value)
-sudo renice -5 $(pgrep yes | head -n 1)
-```
-
-![screenshot1a](./s8_prioritising_deprioritising.png)
-
-
 
 
 
