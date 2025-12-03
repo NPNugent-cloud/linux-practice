@@ -18,7 +18,7 @@ This lab focused on:
 
 ![s1\_processes](./s2_ps_aux_output.png)
 ![s1\_processes](./s3_top_running.png)
-![s1\_processes](./s2_htop_running.png)
+![s1\_processes](./s4_htop_running.png)
 
 * Ran `ps aux` to list all processes and `top` for real-time monitoring. If `htop` is installed, used `htop` for easier navigation. Quitted interactive tools with `q` or `F10`.
 
