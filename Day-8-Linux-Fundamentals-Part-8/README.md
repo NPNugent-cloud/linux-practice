@@ -25,7 +25,7 @@ This lab focused on:
 
 ### 2. Checking Service Status
 
-![screenshot2](./s2_status.png)
+![screenshot2](./s2_ssh_status.png)
 
 * Command: `sudo systemctl status ssh`
 * **Explanation:** Displays detailed cron service information (active state, main PID, logs).
@@ -33,7 +33,7 @@ This lab focused on:
 
 ### 3. Enabling and Starting SSH Service
 
-![screenshot3](./s4_service_enasble_disable.png)
+![screenshot3](./s4_service_enable_disable.png)
 
 
 * Commands:
@@ -84,8 +84,8 @@ This lab focused on:
 
 ### 7. Viewing SSH Client Configuration
 
-![screenshot7](./s7a_client_config.png)
-![screenshot7](./s7b_client_config.png)
+![screenshot7](./s7a_ssh_client_config.png)
+![screenshot7](./s7b_ssh_client_config.png)
 
 * Command: `cat ~/.ssh/config` (or `nano ~/.ssh/config`)
 * **Explanation:** Allows checking or editing client-side SSH options like Host, Port, IdentityFile.
