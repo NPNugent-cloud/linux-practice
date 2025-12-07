@@ -120,3 +120,31 @@ Completed lab covering:
 
 [View Day 6 Lab →](./Day-6-Linux-Fundamentals-Part-6/README.md)
 
+
+
+## Day 7 — Linux Fundamentals Part 7
+Completed lab covering:
+- Advanced process management in Kali Linux
+- Viewing all processes with `ps aux` and real-time monitoring with `top` and `htop`
+- Searching for specific processes using `pgrep` and `ps` with safe handling of multiple or zero PIDs
+- Terminating processes individually or in bulk with `kill` and `killall`
+- Adjusting process priorities with `renice` to manage CPU usage
+- Capturing screenshots for documentation and verification
+
+[View Day 7 Lab →](./Day-7-Linux-Fundamentals-Part-7/README.md)
+
+
+
+## Day 8 — Linux Fundamentals Part 8
+Completed lab covering:
+- Understanding systemd and managing services
+- Checking service status and enabling/disabling services safely
+- Enabling and starting SSH service on Kali VM
+- Generating SSH key pairs for passwordless login
+- Copying public keys to remote VM for key-based authentication
+- Securing SSH by disabling root login and password authentication
+- Capturing screenshots at every step for documentation and verification
+
+[View Day 8 Lab →](./Day-8-Linux-Fundamentals-Part-8/README.md)
+
+
