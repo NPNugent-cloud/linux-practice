@@ -14,7 +14,7 @@ sudo useradd -m devuser
 
 * **Purpose:** Creates `devuser` with a home directory.
 * **Verification:** `ls -l /home/`
-* **Screenshot:** ![Screenshot 1](screenshots/day-9/01_create_user.png)
+* **Screenshot:** ![Screenshot 1](s1_create_user.png)
 
 ### 2. Add User to Group
 
@@ -24,7 +24,7 @@ sudo usermod -aG sudo devuser
 
 * **Purpose:** Adds user to sudo group safely.
 * **Verification:** `groups devuser`
-* **Screenshot:** ![Screenshot 2](screenshots/day-9/02_add_to_group.png)
+* **Screenshot:** ![Screenshot 2](s2_add_user_to_group.png)
 
 ### 3. Add User to Multiple Groups
 
@@ -34,7 +34,7 @@ sudo usermod -aG docker,developers devuser
 
 * **Purpose:** Bulk add groups.
 * **Verification:** `groups devuser`
-* **Screenshot:** ![Screenshot 3](screenshots/day-9/03_add_multiple_groups.png)
+* **Screenshot:** ![Screenshot 3](s3_add_user_multpile_groups.png)
 
 ### 4. Remove User from a Group
 
@@ -44,7 +44,7 @@ sudo gpasswd -d devuser docker
 
 * **Purpose:** Safely remove group membership.
 * **Verification:** `groups devuser`
-* **Screenshot:** ![Screenshot 4](screenshots/day-9/04_remove_from_group.png)
+* **Screenshot:** ![Screenshot 4](s4_remove_user.png)
 
 ### 5. Inspect Accounts
 
@@ -54,7 +54,7 @@ tail -n 5 /etc/group
 ```
 
 * **Purpose:** Verify recent changes.
-* **Screenshot:** ![Screenshot 5](screenshots/day-9/05_inspect_accounts.png)
+* **Screenshot:** ![Screenshot 5](s5_inspect_groups.png)
 
 ### 6. View All Users
 
@@ -63,7 +63,7 @@ cat /etc/passwd
 ```
 
 * **Purpose:** Understand system accounts.
-* **Screenshot:** ![Screenshot 6](screenshots/day-9/06_all_users.png)
+* **Screenshot:** ![Screenshot 6](s7_view_user_details.png)
 
 ### 7. Inspect Shadow Passwords
 
@@ -72,7 +72,7 @@ sudo cat /etc/shadow
 ```
 
 * **Purpose:** See encrypted passwords (root only).
-* **Screenshot:** ![Screenshot 7](screenshots/day-9/07_shadow.png)
+* **Screenshot:** ![Screenshot 7](s8_secure_password_storage.png)
 
 ### 8. Modify Existing User
 
@@ -82,7 +82,7 @@ sudo usermod -aG developers projectadmin
 
 * **Purpose:** Assign group membership.
 * **Verification:** `id projectadmin`
-* **Screenshot:** ![Screenshot 8](screenshots/day-9/08_modify_user.png)
+
 
 ### 9. Change User Shell
 
@@ -92,7 +92,7 @@ sudo usermod -s /bin/zsh projectadmin
 
 * **Purpose:** Update default login shell.
 * **Verification:** `/etc/passwd`
-* **Screenshot:** ![Screenshot 9](screenshots/day-9/09_change_shell.png)
+* **Screenshot:** ![Screenshot 9](s10_change_user_login_shell.png)
 
 ## Hands-On Mini Lab
 
@@ -120,11 +120,8 @@ sudo usermod -aG cloudteam noeldev
 
 **Screenshot Checkpoints:**
 
-* ![Screenshot 10](screenshots/day-9/10_home_listing.png)
-* ![Screenshot 11](screenshots/day-9/11_groups_projectadmin.png)
-* ![Screenshot 12](screenshots/day-9/12_id_noeldev.png)
-* ![Screenshot 13](screenshots/day-9/13_passwd_group_tail.png)
-* ![Screenshot 14](screenshots/day-9/14_sudo_su_projectadmin.png)
+* ![Screenshot 10](s9_mini_lab.png)
+
 
 ## Troubleshooting
 
@@ -133,6 +130,7 @@ sudo usermod -aG cloudteam noeldev
 * `useradd: command not found` → prefix with `sudo`
 * User not showing groups → log out/in or `newgrp`
 * Accidentally overwrote groups → restore from `/etc/group`
+* * ![Screenshot 14](s6_create_login.png)
 
 ## Key Takeaways
 
